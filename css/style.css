@@ -12,8 +12,8 @@
     background-color: aquamarine;
 }
 
-.debug .principal_main .col-12{
-    height: 30px;
+.debug .principal_main>.col-12{
+    height: 130px;
 }
 
 /* inizio CSS */
@@ -34,6 +34,14 @@ aside{
 
 .principal_main{
     width: calc(100vw - 50px);
+}
+
+.principal_main table th:first-child{
+    width: calc(100% - 200px);
+}
+
+.principal_main table th:nth-child(1n+2){
+    width: 50px;
 }
 
 @media screen and (min-width:576px){
