@@ -22,6 +22,16 @@ header{
     height: 70px;
 }
 
+header nav .ms_logo{
+    width: 50px;
+}
+header nav .ms_button{
+    width: 20px;
+}
+header nav form{
+    width: calc(100% - 250px);
+}
+
 main{
     padding-top: 70px;
     height: 100vh;
