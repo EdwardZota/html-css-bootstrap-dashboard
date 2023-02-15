@@ -13,8 +13,7 @@
 }
 
 .debug .principal_main .col-12{
-    background-color: cyan;
-    height: 100px;
+    height: 30px;
 }
 
 /* inizio CSS */
@@ -35,4 +34,14 @@ aside{
 
 .principal_main{
     width: calc(100vw - 50px);
+}
+
+@media screen and (min-width:576px){
+    aside{
+        width: 150px;
+    }
+
+    .principal_main{
+        width: calc(100% -150px);
+    }
 }
