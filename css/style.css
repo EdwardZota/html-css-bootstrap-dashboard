@@ -45,6 +45,10 @@ aside{
     width: 50px;
 }
 
+#ms_top_aside span,#ms_bottom_aside span{
+    display: none;
+}
+
 @media screen and (min-width:576px){
     aside{
         width: 150px;
@@ -52,5 +56,9 @@ aside{
 
     .principal_main{
         width: calc(100% -150px);
+    }
+
+    #ms_top_aside span,#ms_bottom_aside span{
+        display: block;
     }
 }
