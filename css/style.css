@@ -1,9 +1,21 @@
 /* Debug*/
-header{
+
+.debug header{
     background-color: yellowgreen;
 }
 
+.debug aside{
+    background-color: blue;
+}
 
+.debug .principal_main{
+    background-color: aquamarine;
+}
+
+.debug .principal_main .col-12{
+    background-color: cyan;
+    height: 100px;
+}
 
 /* inizio CSS */
 
@@ -13,4 +25,14 @@ header{
 
 main{
     padding-top: 70px;
+    height: 100vh;
+}
+
+aside{
+    width: 50px;
+    height: 100%;
+}
+
+.principal_main{
+    width: calc(100vw - 50px);
 }
