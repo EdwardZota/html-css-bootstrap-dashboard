@@ -55,9 +55,15 @@ aside{
     width: 50px;
 }
 
+.principal_main table tr th:nth-child(2),.principal_main table tr td:nth-child(2),.principal_main table tr th:nth-child(3),.principal_main table tr td:nth-child(3){
+    display: none;
+}
+
+
 #ms_top_aside span,#ms_bottom_aside span{
     display: none;
 }
+
 
 @media screen and (min-width:576px){
     aside{
@@ -71,4 +77,16 @@ aside{
     #ms_top_aside span,#ms_bottom_aside span{
         display: block;
     }
+
+    .principal_main table tr th:nth-child(3),.principal_main table tr td:nth-child(3){
+        display:table-cell;
+    }
+    
+}
+
+@media screen and (min-width:700px){
+    .principal_main table tr th:nth-child(2),.principal_main table tr td:nth-child(2){
+        display:table-cell;
+    }
+    
 }
