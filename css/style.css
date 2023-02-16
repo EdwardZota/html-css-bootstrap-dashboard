@@ -1,6 +1,7 @@
 :root{
     --principal-bg-color:#f8f9fa;
     --search-bg-color:#e5e5e5;
+    --top-main-badge-color:#165bba;
 }
 
 
@@ -84,6 +85,14 @@ aside{
     display: none;
 }
 
+.ms_bg_badge{
+    background-color: var(--top-main-badge-color);
+}
+
+.ms_badge_dnone{
+    display: none;
+}
+
 
 #ms_top_aside span,#ms_bottom_aside span{
     display: none;
@@ -135,4 +144,15 @@ aside{
         width: calc(100% - 250px);
     }
     
+}
+
+@media screen and (min-width:1200px){
+    
+    .ms_badge_dnone{
+        display: inline;
+    }
+
+    .ms_badge{
+        display: none;
+    }
 }
