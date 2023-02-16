@@ -53,24 +53,24 @@
     <main class="d-flex">
         <aside class="d-flex flex-column justify-content-between p-3 p-sm-4 text-white">
             <div id="ms_top_aside">
-                <div class="d-flex">
-                    <i class="fa-solid fa-house pt-1"></i>
+                <div class="d-flex rounded-2">
+                    <i class="fa-solid fa-house  p-0 p-sm-1"></i>
                     <span class="ps-3">Home</span>
                 </div>
-                <div class="d-flex py-3">
-                    <i class="fa-solid fa-chart-simple pt-1"></i>
+                <div class="d-flex rounded-2 my-3">
+                    <i class="fa-solid fa-chart-simple p-0 p-sm-1"></i>
                     <span class="ps-3">Stats</span>
                 </div>
-                <div class="d-flex">
-                    <i class="fa-solid fa-signal pt-1"></i>
+                <div class="d-flex rounded-2">
+                    <i class="fa-solid fa-signal p-0 p-sm-1"></i>
                     <span class="ps-3">Signals</span>
                 </div>
 
             </div>
 
             <div id="ms_bottom_aside">
-                <div class="d-flex">
-                    <i class="fa-solid fa-gear ms_aside_logo pt-1"></i>
+                <div class="d-flex rounded-2">
+                    <i class="fa-solid fa-gear ms_aside_logo p-0 p-sm-1"></i>
                     <span class="ps-3">Admin</span>
                 </div>
             </div>
@@ -94,19 +94,99 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                  <div class="">
-                                    Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-                                  </div>
-                                  <div class="dropdown mt-3">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                      Dropdown button
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </div>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-6 mb-2 ps-0">
+                                                <label for="Name" class="form-label">Nome</label>
+                                                <input type="password" id="Name" class="form-control" required>
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <label for="Surname" class="form-label">Cognome</label>
+                                                <input type="text" id="Surname" class="form-control" required>
+                                            </div>
+                                            <div class="col-6 mb-2 ps-0">
+                                                <label for="E-mail" class="form-label">E-mail</label>
+                                                <div class="input-group">
+                                                  <span class="input-group-text" id="E-mail">@</span>
+                                                  <input type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <label for="E-mail2" class="form-label">Ripeti E-mail</label>
+                                                <div class="input-group">
+                                                  <span class="input-group-text" id="E-mail2">@</span>
+                                                  <input type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mb-2 ps-0">
+                                                <label for="Password" class="form-label">Password</label>
+                                                <input type="password" id="Password" class="form-control" required>
+                                            </div>
+                                            <div class="col-6 mb-2">
+                                                <label for="Password2" class="form-label">Ripeti password</label>
+                                                <input type="password" id="Password2" class="form-control" required>
+                                            </div>
+                                            <div class="col-12 mb-2 ps-0">
+                                                <label for="address" class="form-label">Indirizzo</label>
+                                                <input type="text" id="address" class="form-control" required>
+                                            </div>
+                                            <div class="col-6 mb-2 ps-0">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input type="text" id="city" class="form-control" required>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <label for="country" class="form-label">Password</label>
+                                                <select class="form-select" id="country">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="1">Austria</option>
+                                                    <option value="2">Belgio</option>
+                                                    <option value="3">Bulgaria</option>
+                                                    <option value="4">Cipro</option>
+                                                    <option value="5">Croazia</option>
+                                                    <option value="6">Danimarca</option>
+                                                    <option value="7">Estonia</option>
+                                                    <option value="8">Finlandia</option>
+                                                    <option value="9">Francia</option>
+                                                    <option value="10">Germania</option>
+                                                    <option value="11">Grecia</option>
+                                                    <option value="12">Irlanda</option>
+                                                    <option value="13">Italia</option>
+                                                    <option value="14">Lettonia</option>
+                                                    <option value="15">Lituania</option>
+                                                    <option value="16">Lussemburgo</option>
+                                                    <option value="17">Malta</option>
+                                                    <option value="18">Paesi Bassi</option>
+                                                    <option value="19">Polonia</option>
+                                                    <option value="20">Portogallo</option>
+                                                    <option value="21">Repubblica Ceca</option>
+                                                    <option value="22">Romania</option>
+                                                    <option value="23">Slovacchia</option>
+                                                    <option value="24">Slovenia</option>
+                                                    <option value="25">Spagna</option>
+                                                    <option value="26">Svezia</option>
+                                                    <option value="27">Ungheria</option>
+                                                  </select>
+                                            </div>
+                                            <div class="col-2 mb-2">
+                                                <label for="CAP" class="form-label">CAP</label>
+                                                <input type="text" id="CAP" class="form-control" required>
+                                            </div>
+                                            <div class="col-12 mb-2 ps-0">
+                                                <label for="formFile" class="form-label">Scegli File</label>
+                                                <input class="form-control" type="file" id="formFile" required>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Seleziona per proseguire
+                                                </label>
+                                              </div>
+                                              <div class="col-12 ps-0">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                         </div>

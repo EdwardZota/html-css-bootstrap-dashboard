@@ -61,6 +61,12 @@ aside{
     background-image: url(../img/sidebar-bg.png);
 }
 
+aside div .d-flex:hover{
+    background-color: white;
+    color: black;
+}
+
+
 
 .principal_main{
     width: calc(100vw - 50px);
@@ -105,6 +111,10 @@ aside{
     display: none;
 }
 
+.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
 
 @media screen and (min-width:576px){
     aside{
@@ -121,6 +131,10 @@ aside{
 
     .principal_main table tr th:nth-child(3),.principal_main table tr td:nth-child(3){
         display:table-cell;
+    }
+
+    .offcanvas.offcanvas-end{
+        width: 800px;
     }
     
 }
