@@ -77,8 +77,16 @@ aside{
     width: calc(100% - 200px);
 }
 
-.principal_main table th:nth-child(1n+2){
+.principal_main table th:nth-child(1n+3){
     width: 50px;
+}
+
+.principal_main table th:nth-child(2),.principal_main table tr td:nth-child(2),.principal_main table tr td:last-child{
+    width: 110px;
+}
+
+.principal_main table td:first-child,.principal_main table th:first-child{
+    text-align: start;
 }
 
 .principal_main table tr th:nth-child(2),.principal_main table tr td:nth-child(2),.principal_main table tr th:nth-child(3),.principal_main table tr td:nth-child(3){
@@ -93,6 +101,9 @@ aside{
     display: none;
 }
 
+.ms_width_img{
+    width: 30px;
+}
 
 #ms_top_aside span,#ms_bottom_aside span{
     display: none;
@@ -143,6 +154,7 @@ aside{
     header nav form {
         width: calc(100% - 250px);
     }
+
     
 }
 
