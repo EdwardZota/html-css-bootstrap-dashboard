@@ -87,6 +87,7 @@ aside{
 
 .principal_main table td:first-child,.principal_main table th:first-child{
     text-align: start;
+    min-width: 120px;
 }
 
 .principal_main table tr th:nth-child(2),.principal_main table tr td:nth-child(2),.principal_main table tr th:nth-child(3),.principal_main table tr td:nth-child(3){
