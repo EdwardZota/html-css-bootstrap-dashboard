@@ -13,30 +13,37 @@
 
     <header class="fixed-top">
         <nav class="navbar h-100">
-            <div class="container-fluid">
-                <a class="navbar-brand ms_logo">img</a>
-                <form class="d-flex" role="search">
-                    <div class="input-group">
-                    <span class="input-group-text border-end-0 bg-white pe-0" id="basic-addon1">i</span>
-                    <input type="text" class="form-control border-start-0" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="container-fluid bg-white">
+                <a class="navbar-brand ms_logo ms_header_logo">
+                    <img src="img/mobile-logo.png" class="img-fluid" alt="Boolean logo">
+                </a>
+                <a class="navbar-brand ms_header_logo_dnone">
+                    <img src="img/logo.svg" class="img-fluid" alt="Boolean logo">
+                </a>
+                <form class="d-flex bg-secondary rounded-3 me-1" role="search">
+                    <div class="input-group ">
+                    <span class="input-group-text border-end-0 pe-1  ms_color_bg" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass "></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0  ms_color_bg" placeholder="Prova a cercare: Lezioni di Laravel" aria-describedby="basic-addon1">
                     </div>
                 </form>
 
-                <a class="navbar-brand ms_button">i</a>
-                <a class="navbar-brand ms_button">i</a>
-                <a class="navbar-brand ms_button">i</a>
-              
-                <div class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">text</a></li>
-                    <li><a class="dropdown-item" href="#">text</a></li>
-                    <li><a class="dropdown-item" href="#">text</a></li>
+                <a class="navbar-brand ms_button"><i class="fa-solid fa-list-ul"></i></a>
+                <a class="navbar-brand ms_button"><i class="fa-solid fa-circle-question"></i></a>
+                <a class="navbar-brand ms_button"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                
+                
+                <div class="btn-group">
+                    
+                    <a class=" btn border-0 navbar-brand ms_button_bell text-warning" data-bs-toggle="dropdown"><i class="fa-solid fa-bell"></i></a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
                     </ul>
-                </li>
-              </div>
+                  </div>
             </div>
           </nav>
 

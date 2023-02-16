@@ -1,8 +1,11 @@
-/* Debug*/
-
-.debug header{
-    background-color: yellowgreen;
+:root{
+    --principal-bg-color:#f8f9fa;
+    --search-bg-color:#e5e5e5;
 }
+
+
+
+/* Debug*/
 
 .debug aside{
     background-color: blue;
@@ -20,17 +23,39 @@
 
 header{
     height: 70px;
+    background-color: var(--principal-bg-color);
 }
 
-header nav .ms_logo{
-    width: 50px;
-}
 header nav .ms_button{
-    width: 20px;
+    width: 10px;
+    display: none;
+    color: gray;
 }
+
+.ms_button_bell{
+    width: 10px;
+    display: inline-block;
+}
+
+
 header nav form{
-    width: calc(100% - 250px);
+    width: calc(100% - 100px);
 }
+
+header nav form .ms_color_bg{
+    background-color: var(--search-bg-color);
+}
+
+.ms_header_logo{
+    width: 40px;
+}
+
+.ms_header_logo_dnone{
+    display: none;
+    width: 120px;
+}
+
+
 
 main{
     padding-top: 70px;
@@ -87,6 +112,27 @@ aside{
 @media screen and (min-width:700px){
     .principal_main table tr th:nth-child(2),.principal_main table tr td:nth-child(2){
         display:table-cell;
+    }
+    
+}
+
+
+@media screen and (min-width:768px){
+    .ms_header_logo_dnone{
+        display: block;
+        width: 100px;
+    }
+
+    .ms_header_logo{
+        display: none;
+    }
+
+    header nav .ms_button{
+        display: inline-block;
+    }
+
+    header nav form {
+        width: calc(100% - 250px);
     }
     
 }
